@@ -2,6 +2,10 @@
 @include mediaXl {
     .projects {
         grid-template-columns: repeat(4, 1fr);
+
+        .popup{
+            width: 50%;
+        }
     }
 }
 
@@ -9,7 +13,12 @@
 @include mediaLg {
     .projects {
         grid-template-columns: repeat(3, 1fr);
+
+        .popup{
+            width: 70%;
+        }
     }
+
 }
 
 // tablets and small laptops
@@ -51,6 +60,10 @@
     }
     .projects {
         grid-template-columns: repeat(2, 1fr);
+
+        .popup{
+            width: 80%;
+        }
     }
 }
 

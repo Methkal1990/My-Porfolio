@@ -192,6 +192,49 @@ main {
       border-color: #ff8f00;
       transition: all 0.5s ease-out; }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0; }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1; }
+  .overlay .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out; }
+    .overlay .popup h2 {
+      margin-top: 0;
+      color: #333;
+      font-family: Tahoma, Arial, sans-serif; }
+    .overlay .popup .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      transition: all 200ms;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333; }
+      .overlay .popup .close:hover {
+        color: #06D85F; }
+    .overlay .popup .content {
+      padding: 10px 0;
+      color: #333;
+      max-height: 30%;
+      overflow: auto;
+      line-height: 1.5; }
+
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -236,11 +279,15 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+    .projects .popup {
+      width: 50%; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+    .projects .popup {
+      width: 70%; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -272,7 +319,9 @@ main {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+    .projects .popup {
+      width: 80%; } }
 
 @media screen and (max-width: 500px) {
   main {
