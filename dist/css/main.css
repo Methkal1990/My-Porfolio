@@ -100,7 +100,7 @@ body {
   margin: 0;
   font-family: Verdana, sans-serif; }
   body#bg-img {
-    background: url(https://source.unsplash.com/1600x900/?programming);
+    background: url(../img/background.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
