@@ -6,7 +6,7 @@
   "homepage": "https://Methkal1990.github.io/My-Porfolio",
   "dependencies": {
     "gh-pages": "^2.0.1",
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.13.1"
   },
   "devDependencies": {},
   "scripts": {
